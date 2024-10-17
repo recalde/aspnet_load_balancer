@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Dependencies for Redis -->
+    <PackageReference Include="Microsoft.Extensions.Caching.StackExchangeRedis" Version="7.0.0" />
+    <PackageReference Include="StackExchange.Redis" Version="2.6.90" />
+
+    <!-- Dependencies for AWS DynamoDB -->
+    <PackageReference Include="AWSSDK.DynamoDBv2" Version="3.7.3.9" />
+
+    <!-- Dependencies for ASP.NET Core -->
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="7.0.0" />
+  </ItemGroup>
+
+</Project>

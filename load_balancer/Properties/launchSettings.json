@@ -1,0 +1,20 @@
+{
+    "profiles": {
+      "YourProject": {
+        "commandName": "Project",
+        "dotnetRunMessages": true,
+        "launchBrowser": false,
+        "applicationUrl": "http://localhost:5000",
+        "environmentVariables": {
+          "ASPNETCORE_ENVIRONMENT": "Development",
+          "STATE_MANAGER_TYPE": "Redis",
+          "RETENTION_HOURS": "24",
+          "DESTINATION_URLS": "Destination1|1|10|104857600|10485760|http://destination1.com;Destination2|2|5|52428800|5242880|http://destination2.com",
+          "REDIS_CONNECTION_STRING": "localhost:6379",
+          "FILE_STATE_MANAGER_DIRECTORY": "StateFiles",
+          "DYNAMODB_TABLE_NAME": "CalculationRequests",
+          "DYNAMODB_CAPACITY_TABLE_NAME": "EndpointCapacities"
+        }
+      }
+    }
+  }
